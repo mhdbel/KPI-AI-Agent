@@ -17,6 +17,7 @@ def generate_eda_report(df, title="EDA Report", explorative=True, minimal=False)
         minimal=minimal,
         progress_bar=False  # Disable for cleaner output
     )
+    profile.to_file(f"{title}.html")
     return profile
     
 def plot_kpi_distribution(q1_df, q4_df, kpi='resolution_time'):
