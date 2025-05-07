@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "name": "Criteria",
+        "comparisons": {
+            "Case Complexity": {"Staffing Levels": 3},
+            "Case Complexity": {"Process Changes": 5},
+            "Case Complexity": {"Technology Adjustments": 7},
+            "Staffing Levels": {"Process Changes": 3},
+            "Staffing Levels": {"Technology Adjustments": 5},
+            "Process Changes": {"Technology Adjustments": 3}
+        }
+    },
+    "alternatives": [
+        {
+            "name": "Case Complexity",
+            "comparisons": {
+                "Enhanced Training": {"Process Revision": 0.333},
+                "Enhanced Training": {"Staff Augmentation": 0.2},
+                "Enhanced Training": {"Tech Upgrade": 0.143},
+                "Process Revision": {"Staff Augmentation": 3},
+                "Process Revision": {"Tech Upgrade": 0.5},
+                "Staff Augmentation": {"Tech Upgrade": 0.333}
+            }
+        },
+        {
+            "name": "Staffing Levels",
+            "comparisons": {
+                "Hire Temporary Staff": {"Outsource": 3},
+                "Hire Temporary Staff": {"Retrain Existing": 0.5},
+                "Outsource": {"Retrain Existing": 0.333}
+            }
+        }
+    ]
+}
